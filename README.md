@@ -20,7 +20,7 @@ Status: Pass/Fail, based on whether the actual result matches the expected.
 
 Comments: Optional notes, e.g., issues encountered or screenshots attached.
 
-Part 2: Periplus Shopping Cart Test Documentation (Scenario A)
+Part 2: Periplus Shopping Cart Test Documentation (Scenario B)
 Test documentation:
 
 - Test Case 1: Login to Periplus Website
