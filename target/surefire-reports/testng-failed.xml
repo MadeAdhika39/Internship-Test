@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ShoppingCartTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="ShoppingCartTests(failed)" verbose="0">
+    <classes>
+      <class name="com.periplus.automation.ShoppingCartTest">
+        <methods>
+          <include name="addGameOfThronesToCart"/>
+          <include name="deleteProductFromCart"/>
+          <include name="setup"/>
+          <include name="cartPersistenceAfterRefresh"/>
+          <include name="login"/>
+          <include name="verifyProductInCart"/>
+          <include name="addHarryPotterToCart"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.periplus.automation.ShoppingCartTest -->
+    </classes>
+  </test> <!-- ShoppingCartTests(failed) -->
+</suite> <!-- Failed suite [ShoppingCartTestSuite] -->

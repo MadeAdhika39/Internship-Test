@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-05T06:29:04 WIB" name="ShoppingCartTestSuite" finished-at="2025-05-05T06:29:53 WIB" duration-ms="48699">
+    <groups>
+    </groups>
+    <test started-at="2025-05-05T06:29:04 WIB" name="ShoppingCartTests" finished-at="2025-05-05T06:29:53 WIB" duration-ms="48699">
+      <class name="com.periplus.automation.ShoppingCartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:04 WIB" name="setup" finished-at="2025-05-05T06:29:05 WIB" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:05 WIB" name="login" finished-at="2025-05-05T06:29:10 WIB" duration-ms="4691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addHarryPotterToCart()[pri:2, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:10 WIB" name="addHarryPotterToCart" finished-at="2025-05-05T06:29:20 WIB" depends-on-methods="com.periplus.automation.ShoppingCartTest.login" duration-ms="9506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addHarryPotterToCart -->
+        <test-method signature="addGameOfThronesToCart()[pri:3, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:20 WIB" name="addGameOfThronesToCart" finished-at="2025-05-05T06:29:29 WIB" depends-on-methods="com.periplus.automation.ShoppingCartTest.addHarryPotterToCart" duration-ms="9748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGameOfThronesToCart -->
+        <test-method signature="verifyProductInCart()[pri:4, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:29 WIB" name="verifyProductInCart" finished-at="2025-05-05T06:29:34 WIB" depends-on-methods="com.periplus.automation.ShoppingCartTest.addGameOfThronesToCart" duration-ms="4349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductInCart -->
+        <test-method signature="cartPersistenceAfterRefresh()[pri:5, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:34 WIB" name="cartPersistenceAfterRefresh" finished-at="2025-05-05T06:29:38 WIB" depends-on-methods="com.periplus.automation.ShoppingCartTest.verifyProductInCart" duration-ms="4252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPersistenceAfterRefresh -->
+        <test-method signature="deleteAllProductsFromCart()[pri:6, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:38 WIB" name="deleteAllProductsFromCart" finished-at="2025-05-05T06:29:53 WIB" depends-on-methods="com.periplus.automation.ShoppingCartTest.cartPersistenceAfterRefresh" duration-ms="15035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllProductsFromCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.periplus.automation.ShoppingCartTest@4a22f9e2]" started-at="2025-05-05T06:29:53 WIB" name="teardown" finished-at="2025-05-05T06:29:53 WIB" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.periplus.automation.ShoppingCartTest -->
+    </test> <!-- ShoppingCartTests -->
+  </suite> <!-- ShoppingCartTestSuite -->
+</testng-results>
