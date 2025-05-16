@@ -77,38 +77,6 @@ public class ShoppingCartTest {
             ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addBtn);
         }
     }
-
-    @Test(priority = 3, dependsOnMethods = "addHarryPotterToCart")
-    public void addGameOfThronesToCart() throws InterruptedException {
-        driver.get(BASE_URL);
-        WebElement search = wait.until(ExpectedConditions.elementToBeClickable(By.id("filter_name")));
-        search.clear();
-        search.sendKeys("Game of Thrones");
-        driver.findElement(By.cssSelector("button[type='submit']")).click();
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".preloader")));
-
-        WebElement firstTitle = wait.until(ExpectedConditions.presenceOfElementLocated(
-            By.xpath("(//div[contains(@class,'single-product')]//h3/a)[1]")
-        ));
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", firstTitle);
-        Thread.sleep(300);
-        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", firstTitle);
-
-        WebElement addBtn = wait.until(ExpectedConditions.elementToBeClickable(
-            By.cssSelector("button.btn-add-to-cart")
-        ));
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", addBtn);
-        try {
-            addBtn.click();
-        } catch (ElementClickInterceptedException e) {
-            ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addBtn);
-        }
-
-        // Confirm success modal
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//div[contains(@class,'modal-text') and contains(text(),'Success add to cart')]")
-        ));
-    }
     
     @Test(priority = 3, dependsOnMethods = "addHarryPotterToCart")
     public void addGameOfThronesToCart() throws InterruptedException {
